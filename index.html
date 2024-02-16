@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Signup Form</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"/>
+    </head>
+    <body>
+        <section>
+            <div class="form login">
+                <div class="text">LOGIN</div>
+                <form>
+                    <div class="field">
+                        <div class="fas fa-envelope"></div>
+                        <input type="text" placeholder="Email or Username" class="username">
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-lock"></div>
+                        <input type="password" placeholder="Password" class="password">
+                        <i class="bx bx-hide eye-icon" id="password-eye-icon"></i>
+                    </div>
+                    <div class="link-forgot-password"><a href="#">Forgot password?</a></div>
+                    <button onclick="usersLogin();">LOGIN</button>
+                    <div class="form-link link-signup">Don"t have an account? <a href="#">Signup</a></div>
+                </form>
+            </div>
+            <div class="form signup">
+                <div class="text">SIGNUP</div>
+                <form>
+                    <div class="field">
+                        <div class="fas fa-user"></div>
+                        <input type="text" placeholder="Username" class="create-username">
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-envelope"></div>
+                        <input type="email" placeholder="Email" class="create-email">
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-lock"></div>
+                        <input type="password" placeholder="Create password" class="create-password">
+                        <i class="bx bx-hide eye-icon" id="create-password-eye-icon"></i>
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-lock"></div>
+                        <input type="password" placeholder="Confirm password" class="confirm-password">
+                        <i class="bx bx-hide eye-icon" id="confirm-password-eye-icon"></i>
+                    </div>
+                    <button onclick="usersSignup();">SIGNUP</button>
+                    <div class="form-link link-login">Already have an account? <a href="#">Login</a></div>
+                </form>
+            </div>
+            <div class="form forgot-password">
+                <div class="text">FORGOT PASSWORD</div>
+                <form>
+                    <div class="field">
+                        <div class="fas fa-envelope"></div>
+                        <input type="text" placeholder="Email or Username" class="forgot-username">
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-lock"></div>
+                        <input type="password" placeholder="Create new password" class="create-password create-new-password">
+                        <i class="bx bx-hide eye-icon" id="create-password-eye-icon"></i>
+                    </div>
+                    <div class="field">
+                        <div class="fas fa-lock"></div>
+                        <input type="password" placeholder="Confirm new password" class="confirm-password confirm-new-password">
+                        <i class="bx bx-hide eye-icon" id="confirm-password-eye-icon"></i>
+                    </div>
+                    <button onclick="usersSave();">SAVE</button>
+                    <div class="form-link link-signup">Don"t have an account? <a href="#">Signup</a></div>
+                </form>
+            </div>
+        </section>
+        <script src="js/main.js"></script>
+        <script src="js/users.js"></script>
+    </body>
+</html>
